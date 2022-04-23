@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_food_delivery/utils/colors.dart';
 import 'package:flutter_food_delivery/widgets/big_text.dart';
+import 'package:flutter_food_delivery/widgets/icon_and_text_widget.dart';
 import 'package:flutter_food_delivery/widgets/small_text.dart';
 
 class FoodPageBody extends StatefulWidget {
@@ -16,7 +17,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.red,
+      //color: Colors.red,
       height: 320,
       child: PageView.builder(
         controller: pageController,
@@ -77,7 +78,18 @@ class _FoodPageBodyState extends State<FoodPageBody> {
             SizedBox(height: 20,),
             Row(
               children: [
-                
+                IconAndTextWidget(icon: Icons.circle_sharp,
+                  text: "Normal",
+                  iconColor: AppColors.iconColor1
+                  ),
+                  IconAndTextWidget(icon: Icons.location_on,
+                  text: "1.7km",
+                  iconColor: AppColors.mainColor
+                  ),
+                  IconAndTextWidget(icon: Icons.access_time_rounded,
+                  text: "32min",
+                  iconColor: AppColors.iconColor2
+                  ),
               ],
             ),
           ],
