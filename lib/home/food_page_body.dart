@@ -58,7 +58,31 @@ class _FoodPageBodyState extends State<FoodPageBody> {
     activeSize: const Size(18.0, 9.0),
     activeShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
   ),
-) 
+) ,
+
+
+//popular text
+SizedBox(height: Dimensions.height30,),
+Container(
+  margin: EdgeInsets.only(left: Dimensions.width30),
+  child: Row(
+    crossAxisAlignment: CrossAxisAlignment.end,
+    children: [
+      BigText(text: "Popular"),
+      SizedBox(width: Dimensions.width10,),
+    Container( 
+      margin: const EdgeInsets.only(bottom: 3),
+      child: BigText(text: ".",color: Colors.black26,),
+    ),
+      SizedBox(width: Dimensions.width10,),
+      Container(
+        margin: const EdgeInsets.only(bottom: 2),
+        child: SmallText(text: "Food pairing",) ,
+      ),
+    //list of food and image
+    ],
+  ),
+),
       ],
     );
   }//هلا هون بيخلص التابع 
@@ -92,9 +116,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         children: [
           Container(
         height:Dimensions.pageViewContainer,
-        margin:EdgeInsets.only(left: 10,right: 10),
+        margin:EdgeInsets.only(left: Dimensions.width10,right: Dimensions.width10),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(30),
+          borderRadius: BorderRadius.circular(Dimensions.radius30),
           color:index.isEven?Color(0xFF69c5df):Color(0xFF9294cc),
           image: DecorationImage(
             fit: BoxFit.cover,
@@ -107,9 +131,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         alignment: Alignment.bottomCenter,
         child: Container(
           height: Dimensions.pageViewTextContainer,
-          margin:EdgeInsets.only(left: 20,right: 20,bottom: 30),
+          margin:EdgeInsets.only(left: Dimensions.width30,right: Dimensions.width30,bottom: Dimensions.height30),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(30),
+            borderRadius: BorderRadius.circular(Dimensions.radius20),
             color:Colors.white,
             boxShadow: [
               BoxShadow(
