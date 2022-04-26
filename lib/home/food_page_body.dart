@@ -80,6 +80,46 @@ Container(
         child: SmallText(text: "Food pairing",) ,
       ),
     //list of food and image
+    Container(
+      height: 900,
+      child: ListView.builder(
+        //shrinkWrap: true,
+        physics:NeverScrollableScrollPhysics(),
+        itemCount: 10,
+        itemBuilder:(context,index){
+          //image section
+        return Container(
+          margin: EdgeInsets.only(left: Dimensions.width20,right: Dimensions.width20,bottom: Dimensions.height10),
+
+        child: Row(
+          children: [
+            Container(
+              width: 120,
+              height: 120,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(Dimensions.radius20),
+                color: Colors.white30,
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: AssetImage("assets/image/food0.png",),
+                )
+              ),
+            ),
+/////////////////////////////////text container
+      Container(
+        height: 100,
+        width: 200,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(Dimensions.radius20),
+        color: Colors.white,
+        ),
+      ),
+
+          ],
+        ),
+        );
+        }),
+    )
     ],
   ),
 ),
