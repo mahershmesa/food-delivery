@@ -80,10 +80,11 @@ Container(
         child: SmallText(text: "Food pairing",) ,
       ),
     //list of food and image
-    Container(
-      height: 900,
-      child: ListView.builder(
-        //shrinkWrap: true,
+    //Container(
+     // height: 900,
+      //child:
+      ListView.builder(
+        shrinkWrap: true,
         physics:NeverScrollableScrollPhysics(),
         itemCount: 10,
         itemBuilder:(context,index){
@@ -94,8 +95,8 @@ Container(
         child: Row(
           children: [
             Container(
-              width: 120,
-              height: 120,
+              width: Dimensions.ListViewImgSize,
+              height: Dimensions.ListViewImgSize,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(Dimensions.radius20),
                 color: Colors.white30,
@@ -108,7 +109,7 @@ Container(
 /////////////////////////////////text container
       Expanded(
         child: Container(
-          height: 100,
+          height: Dimensions.ListViewTextContSize,
           //width: 200,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.only(
@@ -154,7 +155,7 @@ Container(
         ),
         );
         }),
-    )
+    //)
     ],
   ),
 ),
