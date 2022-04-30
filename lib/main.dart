@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_food_delivery/home/main_food_page.dart';
+//import 'package:flutter_food_delivery/home/main_food_page.dart';
+import 'package:flutter_food_delivery/pages/home/main_food_page.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
