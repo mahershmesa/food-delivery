@@ -60,7 +60,7 @@ class PupularFoodDetail extends StatelessWidget {
               ),
               child:Column(
                 children: [
-                  AppColumn(text: "Chinese Side",),
+                  AppColumn(text: "Chinese Side",),kjkjkjkj
                 ],
               ), 
               ),
