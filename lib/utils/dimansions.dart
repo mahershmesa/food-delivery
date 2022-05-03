@@ -45,4 +45,7 @@ static double ListViewTextContSize= screenWidth/3.9;
 
 //pupolar food
 static double popularFoodImgSize = screenHeight/2.41;
+
+//bottom height
+static double bottomheightbar = screenHeight/7.03;
 }
