@@ -81,6 +81,23 @@ class PupularFoodDetail extends StatelessWidget {
             topRight: Radius.circular(Dimensions.radius20*2),
           )
         ),
+        child: Row(
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(Dimensions.radius20),
+                color: Colors.white,
+              ),
+              child: Row(
+                children: [
+                  Icon(Icons.remove,color: AppColors.signColor,),
+                  BigText(text: "0"),
+                  Icon(Icons.add,color: AppColors.signColor,),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
