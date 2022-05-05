@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_food_delivery/utils/colors.dart';
 import 'package:flutter_food_delivery/utils/dimansions.dart';
 import 'package:flutter_food_delivery/widgets/small_text.dart';
 
@@ -35,7 +37,19 @@ class _ExpandableTextWidgetState extends State<ExpandableTextWidget> {
     return Container(
       child: secondHalf.isEmpty?SmallText(text: firstHalf):Column(
         children: [
-          
+          SmallText(text: hiddenText?(firstHalf+"..."):(firstHalf+secondHalf)),
+          InkWell(
+            onTap: (){
+
+            },
+            child: Row(
+              children: [
+                SmallText(text: "Show more",color: AppColors.mainColor,),
+                Icon(Icons.arrow_drop_down,color: AppColors.mainColor,),
+                
+              ],
+            ),
+          )
         ],
       ),
     );
