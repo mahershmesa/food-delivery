@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_food_delivery/utils/dimansions.dart';
+import 'package:flutter_food_delivery/widgets/small_text.dart';
 
 class ExpandableTextWidget extends StatefulWidget {
   final String text;
@@ -32,7 +33,11 @@ class _ExpandableTextWidgetState extends State<ExpandableTextWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      
+      child: secondHalf.isEmpty?SmallText(text: firstHalf):Column(
+        children: [
+          
+        ],
+      ),
     );
   }
 }
