@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_food_delivery/utils/dimansions.dart';
 
 class ExpandableTextWidget extends StatefulWidget {
   final String text;
@@ -14,6 +15,14 @@ class _ExpandableTextWidgetState extends State<ExpandableTextWidget> {
 
 
   bool hiddenText=true;
+  double textHeight = Dimensions.screenHeight/5.63;
+
+  @override
+  void initState() {
+    super.initState();
+    
+  }
+  
   @override
   Widget build(BuildContext context) {
     return Container(
