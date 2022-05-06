@@ -5,6 +5,7 @@ import 'package:flutter_food_delivery/utils/dimansions.dart';
 import 'package:flutter_food_delivery/widgets/app_column.dart';
 import 'package:flutter_food_delivery/widgets/app_icon.dart';
 import 'package:flutter_food_delivery/widgets/big_text.dart';
+import 'package:flutter_food_delivery/widgets/exandable_text_widget.dart';
 import 'package:flutter_food_delivery/widgets/icon_and_text_widget.dart';
 import 'package:flutter_food_delivery/widgets/small_text.dart';
 
@@ -16,6 +17,7 @@ class PupularFoodDetail extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
+          //background image
           Positioned(
             left: 0,
             right: 0,
@@ -31,6 +33,7 @@ class PupularFoodDetail extends StatelessWidget {
             ),
             ),
             ),
+            //icon widgets
             Positioned(
               top: Dimensions.height45,
               left: Dimensions.width20,
@@ -42,8 +45,9 @@ class PupularFoodDetail extends StatelessWidget {
               AppIcon(icon: Icons.shopping_cart_outlined,)
               ],
             )
-
+            
             ),
+            //introduction of food
             Positioned(
               left: 0,
               right: 0,
@@ -63,11 +67,17 @@ class PupularFoodDetail extends StatelessWidget {
                 children: [
                   AppColumn(text: "Chinese Side",),
                   SizedBox(height: Dimensions.height20,),
-                  BigText(text: "Introduce")
+                  BigText(text: "Introduce"),
+                  SizedBox(height: Dimensions.height20,),
+                  //expadable text widget
+                  Expanded(child: SingleChildScrollView(child: ExpandableTextWidget(text: "jhkjhkjhkjhkhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkhkjhkjhkjhkjhkjhkjhkjhkjhkhkjhkjhkjhkjhkjhkhkjhkhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkjhkhkjhkjhkjhkjhkjhkjhkjhkjhkjhkj"))),
+                  
                 ],
               ), 
               ),
-              ),    
+              ), 
+              
+              
         ],
       ),
       bottomNavigationBar: Container(

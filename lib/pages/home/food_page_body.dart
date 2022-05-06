@@ -223,7 +223,7 @@ Container(
           ),
         child: Container(
           padding: EdgeInsets.only(top: Dimensions.height15,left: 15,right: 15),
-          child:AppColumn(),
+          child: AppColumn(text: "Chinese Side",),
         ),
     
         ),

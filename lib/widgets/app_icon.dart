@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_food_delivery/utils/dimansions.dart';
 
 class AppIcon extends StatelessWidget {
 final IconData icon;
@@ -25,7 +26,7 @@ final double size;
       child: Icon(
         icon,
         color: iconColor,
-        size: 16,
+        size: Dimensions.iconSize16,
       ),
     );
   }
