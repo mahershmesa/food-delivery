@@ -12,10 +12,10 @@ class PopularProductController extends GetxController{
     Response response = await popularProductRepo.getPopularProductList();
     if(response.statusCode==200){
       _popularProductList=[];
-      _popularProductList.addAll();
+     // _popularProductList.addAll();
       update();
     }else{
-      
+
     }
   }
 }
