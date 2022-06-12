@@ -1,3 +1,4 @@
+import 'package:flutter_food_delivery/utils/app_constants.dart';
 import 'package:get/get.dart';
 
 class ApiClient extends GetConnect implements GetxService{
@@ -10,9 +11,11 @@ class ApiClient extends GetConnect implements GetxService{
   }){
     baseUrl = AppBaseUrl;
     timeout = Duration(seconds: 30);
+    token =AppConstants.TOKEN;
     _mainHeaders = {
       "Content-type":"application/json; charset=UTF-8",
       "Authorization":"Bearer $token",
+    
     };
   }
 

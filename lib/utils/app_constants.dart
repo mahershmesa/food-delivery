@@ -5,4 +5,6 @@ class AppConstants{
   static const String BASE_URL ="https://mvs.bslneiyu.com";
   static const String POPULAR_PRODUCT_URL ="/api/v1/products/popular";
   static const String RECOMMENDED_PRODUCT_URL="/api/v1/products/recommended";
+
+  static const String TOKEN="DBtoken";
 }
