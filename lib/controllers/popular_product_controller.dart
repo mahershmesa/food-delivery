@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_food_delivery/data/repository/popular_product_repo.dart';
+import 'package:flutter_food_delivery/model/products_model.dart';
+import 'package:flutter_food_delivery/utils/colors.dart';
 import 'package:food_delivery_application/controllers/cart_controller.dart';
 import 'package:food_delivery_application/data/repository/popular_product_repo.dart';
 import 'package:food_delivery_application/model/products_model.dart';
@@ -6,6 +9,7 @@ import 'package:food_delivery_application/utils/colors.dart';
 import 'package:get/get.dart';
 
 import '../model/cart_model.dart';
+import 'cart_controller.dart';
 
 class PopularProductController extends GetxController{
   final PopularProductRepo popularProductRepo;
