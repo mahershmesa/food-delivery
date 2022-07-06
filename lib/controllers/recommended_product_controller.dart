@@ -1,4 +1,5 @@
-import 'package:food_delivery_application/data/repository/recommended_product_repo.dart';
+import 'package:flutter_food_delivery/data/repository/recommended_product_repo.dart';
+
 import 'package:get/get.dart';
 
 import '../model/products_model.dart';

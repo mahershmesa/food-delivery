@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_food_delivery/model/products_model.dart';
-import 'package:food_delivery_application/model/products_model.dart';
+import 'package:flutter_food_delivery/model/products_model.dart';
 import 'package:get/get.dart';
 
 import '../data/repository/cart_repo.dart';
