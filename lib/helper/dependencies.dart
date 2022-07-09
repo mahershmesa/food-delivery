@@ -5,7 +5,6 @@ import 'package:flutter_food_delivery/data/repository/cart_repo.dart';
 import 'package:flutter_food_delivery/data/repository/popular_product_repo.dart';
 import 'package:flutter_food_delivery/data/repository/recommended_product_repo.dart';
 import 'package:flutter_food_delivery/utils/app_constants.dart';
-
 import 'package:get/get.dart';
 
 import '../controllers/recommended_product_controller.dart';

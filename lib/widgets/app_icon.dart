@@ -1,21 +1,21 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_food_delivery/utils/dimansions.dart';
+
+
 
 class AppIcon extends StatelessWidget {
-final IconData icon;
-final Color backgroundColor;
-final Color iconColor;
-final double size;
-final double iconSize;
-
-  const AppIcon({ Key? key,
-  required this.icon,
-  this.backgroundColor=const Color(0xFFfcf4e4),
-  this.size=40,
-  this.iconSize=16,
-  this.iconColor=const Color(0xFF756d54),
+  final Color backgroundColor;
+  final Color iconColor;
+  final IconData icon;
+  final double size;
+  final double iconSize;
+  AppIcon({
+    Key? key,
+    this.iconColor=const Color(0xFF756d54),
+    this.backgroundColor=const Color(0xFFfcf4e4),
+    this.size = 40,
+    this.iconSize=16,
+    required this.icon,
   }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -27,8 +27,8 @@ final double iconSize;
       ),
       child: Icon(
         icon,
-        color: iconColor,
-        size: iconSize,
+      color: iconColor,
+      size:iconSize,
       ),
     );
   }

@@ -1,63 +1,68 @@
 import 'package:flutter/material.dart';
-//import 'package:flutter_food_delivery/home/food_page_body.dart';
-import 'package:flutter_food_delivery/utils/colors.dart';
 import 'package:flutter_food_delivery/utils/dimansions.dart';
-import 'package:flutter_food_delivery/widgets/big_text.dart';
-import 'package:flutter_food_delivery/widgets/small_text.dart';
-import 'package:get/get.dart';
+
+import '../../utils/colors.dart';
+
+import '../../widgets/big_text.dart';
+import '../../widgets/small_text.dart';
 import 'food_page_body.dart';
 
 class MainFoodPage extends StatefulWidget {
-  const MainFoodPage({ Key? key }) : super(key: key);
+  const MainFoodPage({Key? key}) : super(key: key);
 
   @override
-  State<MainFoodPage> createState() => _MainFoodPageState();
+  _MainFoodPageState createState() => _MainFoodPageState();
 }
 
 class _MainFoodPageState extends State<MainFoodPage> {
   @override
   Widget build(BuildContext context) {
-   // print("current height is"+MediaQuery.of(context).size.height.toString());
     return Scaffold(
-      body:Column(
+      body: Column(
         children: [
           Container(
-          child: Container(
-            margin: EdgeInsets.only(top: Dimensions.height45, bottom: Dimensions.height15),
-            padding: EdgeInsets.only(left: Dimensions.width20,right: Dimensions.width20),
-            child: Row(
-              mainAxisAlignment:MainAxisAlignment.spaceBetween,
-              children: [
-            Column(
-              children: [
-              BigText(text: "Bangladesh",color: AppColors.mainColor,),
-              Row(
+            child: Container(
+              margin: EdgeInsets.only(top: Dimensions.height15*3, bottom: Dimensions.height15),
+              padding: EdgeInsets.only(left: Dimensions.width10*2, right: Dimensions.width10*2),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  SmallText(text: "Narsingdi",color: Colors.black54,),
+                  Column(
+                    children: [
+                      BigText(
+                        text: "Bangladesh",
+                        color: AppColors.mainColor,
+                      ),
+                      Row(
+                        children: [
+                          SmallText(text:'City',color: Colors.black54,),
+                          Icon(Icons.arrow_drop_down),
+                        ],
+                      ),
+                    ],
+                  ),
+                  Center(
+                    child: Container(
+                      width: Dimensions.width15*3,
+                      height: Dimensions.height15*3,
+                      child: Icon(Icons.search, color: Colors.white,size: Dimensions.iconSize24,),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(Dimensions.radius15),
+                        color: AppColors.mainColor,
+                      ),
+                    ),
+                  ),
                 ],
               ),
-              ],
-          ),
-          Center(
-            child: Container(
-              width: Dimensions.height45,
-              height: Dimensions.height45,
-              child: Icon(Icons.search,color: Colors.white,size: Dimensions.iconSize24,),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(Dimensions.radius15),
-                color: AppColors.mainColor,
-              ),
             ),
           ),
-            ],
+          Expanded(
+            child: SingleChildScrollView(
+                child: FoodPageBody()
             ),
-          ), 
           ),
-          Expanded(child: SingleChildScrollView(
-          child: FoodPageBody(),
-          ),),
+
         ],
-      
       ),
     );
   }

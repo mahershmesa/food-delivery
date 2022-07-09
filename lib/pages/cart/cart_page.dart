@@ -1,11 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:food_delivery_application/controllers/cart_controller.dart';
-import 'package:food_delivery_application/utils/app_constants.dart';
-import 'package:food_delivery_application/utils/colors.dart';
-import 'package:food_delivery_application/utils/dimensions.dart';
-import 'package:food_delivery_application/widgets/app_icon.dart';
-import 'package:food_delivery_application/widgets/big_text.dart';
+import 'package:flutter_food_delivery/controllers/cart_controller.dart';
+import 'package:flutter_food_delivery/utils/app_constants.dart';
+import 'package:flutter_food_delivery/utils/colors.dart';
+import 'package:flutter_food_delivery/utils/dimansions.dart';
+
+import 'package:flutter_food_delivery/widgets/app_icon.dart';
+import 'package:flutter_food_delivery/widgets/big_text.dart';
 import 'package:get/get.dart';
 
 import '../../widgets/small_text.dart';
